@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management </title>
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container flush">
+                <div class="row center navbar">
+                    <a href="http://127.0.0.1:5500/index.html"><h3 class="header__title">Contact Management - PTITHCM</h3></a>
+                    <input oninput="findContact()" type="text" name="find" placeholder="Find name contact" class="header__input">
+                    <a onclick="openAddContactForm()" href="#open-modal" class="btn header__btn--add">Add contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="contact">
+        <div class="container">
+            <div class="row list-contact"></div>
+        </div>
+    </main>
+    <script src="./js/app.js"></script>
+    <script src="./js/validator.js"></script>
+    <script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <footer>
+        <p>©Copyright 2021 - Contact Management</p>
+    </footer>
+</body>
+
+</html>
